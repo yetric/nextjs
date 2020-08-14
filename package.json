@@ -9,7 +9,7 @@
     "format": "prettier --write {cli,client,lib,pages,server,tests}/**/*.{js,ts,jsx,tsx,md,scss,css,json}",
     "format-check": "prettier --check {cli,client,lib,pages,server,tests}/**/*.{js,ts,jsx,tsx,md,scss,css,json}",
     "node-check": "node cli/check_node_version.js",
-    "tslint": "tslint -p . -c tslint.json",
+    "tslint": "tslint '{cli,client,lib,pages,server,tests}/**/*.{ts,tsx}' -c tslint.json",
     "deploy": "npm run format-check && npm run tslint && npm build",
     "postinstall": "npm run node-check",
     "storybook": "start-storybook -p 6006",
