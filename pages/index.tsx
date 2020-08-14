@@ -11,9 +11,11 @@ export default function Home() {
       </Head>
 
       <main className={styles.main}>
-          Next JS opinonated setup
+          <p>Next JS opinonated setup</p>
 
           <Button>Holy Smoke Button</Button>
+          <Button type={"alert"}>Holy Smoke Button</Button>
+          <Button type={"success"}>Holy Smoke Button</Button>
       </main>
     </div>
   )

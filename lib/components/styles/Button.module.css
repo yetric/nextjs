@@ -2,7 +2,27 @@
     display: inline-block;
     line-height: 48px;
     padding: 0 32px;
+    border-radius: 3px;
+}
+
+.base ~ .base {
+    margin-left: 4px;
+}
+
+.basic {
+    composes: base;
+    border: 1px solid gray;
+    color: gray;
+}
+
+.alert {
+    composes: base;
     border: 1px solid red;
     color: red;
-    border-radius: 3px;
+}
+
+.success {
+    composes: base;
+    border: 1px solid green;
+    color: green;
 }
