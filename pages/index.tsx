@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
+import {Button} from "../lib/components/Button";
 
 export default function Home() {
   return (
@@ -11,6 +12,8 @@ export default function Home() {
 
       <main className={styles.main}>
           Next JS opinonated setup
+
+          <Button>Holy Smoke Button</Button>
       </main>
     </div>
   )
