@@ -5,7 +5,9 @@ type ButtonType = "basic" | "alert" | "success";
 
 interface ButtonProps {
     children: any;
-    type?: ButtonType
+    type?: ButtonType;
 }
 
-export const Button = ({ children, type = "basic" }: ButtonProps) => <div className={`${styles[type]}`}>{children}</div>;
+export const Button = ({ children, type = "basic" }: ButtonProps) => (
+    <div className={`${styles[type]}`}>{children}</div>
+);

@@ -9,6 +9,7 @@
     "format": "prettier --write {cli,client,lib,pages,server,tests}/**/*.{js,ts,jsx,tsx,md,scss,css,json}",
     "format-check": "prettier --check {cli,client,lib,pages,server,tests}/**/*.{js,ts,jsx,tsx,md,scss,css,json}",
     "node-check": "node cli/check_node_version.js",
+    "tslint": "tslint -p . -c tslint.json",
     "postinstall": "npm run node-check"
   },
   "dependencies": {
@@ -24,6 +25,9 @@
     "husky": "^4.2.5",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
+    "tslint": "^6.1.3",
+    "tslint-config-airbnb": "^5.11.2",
+    "tslint-react-hooks": "^2.2.2",
     "typescript": "^3.9.7"
   },
   "husky": {
