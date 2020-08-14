@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import { Button } from "@components/Button";
+import Link from "next/link";
 
 export default function Home() {
     return (
@@ -16,6 +17,7 @@ export default function Home() {
                 <Button>Holy Smoke Button</Button>
                 <Button type={"alert"}>Holy Smoke Button</Button>
                 <Button type={"success"}>Holy Smoke Button</Button>
+                <p><Link target={"_blank"} href={"http://localhost:6006"}>Storybook</Link></p>
             </main>
         </div>
     );
