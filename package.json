@@ -7,12 +7,15 @@
     "build": "next build",
     "start": "next start",
     "format": "prettier --write {cli,client,lib,pages,server,tests}/**/*.{js,ts,jsx,tsx,md,scss,css,json}",
-    "format-check": "prettier --check {cli,client,lib,pages,server,tests}/**/*.{js,ts,jsx,tsx,md,scss,css,json}"
+    "format-check": "prettier --check {cli,client,lib,pages,server,tests}/**/*.{js,ts,jsx,tsx,md,scss,css,json}",
+    "node-check": "node cli/check_node_version.js",
+    "postinstall": "npm run node-check"
   },
   "dependencies": {
     "next": "9.5.2",
     "react": "16.13.1",
-    "react-dom": "16.13.1"
+    "react-dom": "16.13.1",
+    "semver": "^7.3.2"
   },
   "devDependencies": {
     "@types/node": "^14.0.27",
@@ -29,5 +32,9 @@
   },
   "lint-staged": {
     "*.{js,jsx,ts,tsx,css,md}": "prettier --write"
+  },
+  "engineStrict": true,
+  "engines": {
+    "node": ">=14.6.0"
   }
 }
