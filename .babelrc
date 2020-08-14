@@ -9,6 +9,7 @@
           "@components": "./lib/components"
         }
       }
-    ]
+    ],
+    ["@babel/plugin-proposal-decorators", { "legacy": true }]
   ]
 }

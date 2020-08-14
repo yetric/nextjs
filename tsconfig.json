@@ -20,7 +20,8 @@
     "baseUrl": "./",
     "paths": {
       "@components/*": ["./lib/components/*"]
-    }
+    },
+    "experimentalDecorators": true
   },
   "include": [
     "next-env.d.ts",
