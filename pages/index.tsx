@@ -4,7 +4,7 @@ import { Button } from "@components/Button";
 import Link from "next/link";
 import { useStores } from "../lib/hooks/use-stores";
 import React from "react";
-import {observer} from "mobx-react-lite";
+import { observer } from "mobx-react-lite";
 
 const Home = observer(() => {
     const { appStore } = useStores();
@@ -28,13 +28,20 @@ const Home = observer(() => {
                 </p>
 
                 <p>From Mobx:</p>
-                {appStore.title}<br/>
+                {appStore.title}
+                <br />
                 {appStore.titleReversed}
 
-                <p><a href={"#"} onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
-                    event.preventDefault();
-                    appStore.setTitle("Awesome MobX")
-                }}>Set title to "Awesome Mobx"</a></p>
+                <p>
+                    <a
+                        href={"#"}
+                        onClick={(event: React.MouseEvent<HTMLAnchorElement>) => {
+                            event.preventDefault();
+                            appStore.setTitle("Awesome MobX");
+                        }}>
+                        Set title to "Awesome Mobx"
+                    </a>
+                </p>
             </main>
         </div>
     );

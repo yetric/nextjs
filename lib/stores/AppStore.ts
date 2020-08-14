@@ -1,4 +1,4 @@
-import {action, computed, observable} from "mobx";
+import { action, computed, observable } from "mobx";
 
 export class AppStore {
     @observable title: string = "some example string";
