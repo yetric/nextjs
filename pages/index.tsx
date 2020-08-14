@@ -24,7 +24,7 @@ const Home = observer(() => {
                 <p>
                     <Link target={"_blank"} href={"http://localhost:6006"}>
                         Storybook
-                    </Link>
+                    </Link> - <code>npm run storybook</code> before
                 </p>
 
                 <p>From Mobx:</p>
