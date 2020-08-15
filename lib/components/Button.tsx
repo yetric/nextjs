@@ -1,13 +1,15 @@
 import React from "react";
 import styles from "./styles/Button.module.css";
 
-type ButtonType = "basic" | "alert" | "success";
+type ButtonType = "basic" | "alert" | "success" | "info" | "warning";
+type ButtonSize = "normal" | "small" | "large" | "tiny";
 
 interface ButtonProps {
     children: any;
     type?: ButtonType;
+    size?: ButtonSize
 }
 
-export const Button = ({ children, type = "basic" }: ButtonProps) => (
-    <div className={`${styles[type]}`}>{children}</div>
+export const Button = ({ children, type = "basic", size = "normal" }: ButtonProps) => (
+    <div className={`${styles[type]} ${styles[size]}`}>{children}</div>
 );
