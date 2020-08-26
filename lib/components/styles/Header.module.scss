@@ -1,0 +1,8 @@
+.outer {
+  border-bottom: 1px solid var(--light-gray);
+  min-height: 60px;
+  line-height: 60px;
+}
+.inner {
+  composes: content from "./Layout.module.scss";
+}
