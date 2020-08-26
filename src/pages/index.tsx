@@ -1,6 +1,6 @@
 import { Button } from "@components/Button";
 import Link from "next/link";
-import { useStores } from "../lib/hooks/use-stores";
+import { useStores } from "../shared/hooks/use-stores";
 import React from "react";
 import { observer } from "mobx-react-lite";
 

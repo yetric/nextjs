@@ -19,7 +19,7 @@
     "jsx": "preserve",
     "baseUrl": "./",
     "paths": {
-      "@components/*": ["./src/lib/components/*"]
+      "@components/*": ["./src/shared/components/*"]
     },
     "experimentalDecorators": true
   },

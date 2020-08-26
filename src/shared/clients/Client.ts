@@ -7,7 +7,7 @@ export class Client {
         params: any[] = [],
         headers: any[] = []
     ) {
-        console.log("Do fetch or something here based on " + method);
+        console.log(`Do fetch or something here based on ${method}`);
         return {};
     }
 
