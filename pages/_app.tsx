@@ -1,4 +1,4 @@
-import "../styles/globals.css";
+import "../styles/globals.scss";
 import React from "react";
 import { Layout } from "@components/Layout"; // Always do explicit imports
 

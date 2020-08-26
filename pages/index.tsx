@@ -78,8 +78,8 @@ const Home = observer(() => {
             </p>
 
             <p>
-                <Link target={"_blank"} href={"http://localhost:6006"}>
-                    Storybook
+                <Link href={"http://localhost:6006"}>
+                    <a target={"_blank"}>Storybook</a>
                 </Link>{" "}
                 - <code>npm run storybook</code> before
             </p>
