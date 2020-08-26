@@ -11,5 +11,5 @@ interface ButtonProps {
 }
 
 export const Button = ({ children, type = "basic", size = "normal" }: ButtonProps) => (
-    <div className={`${styles[type]} ${styles[size]}`}>{children}</div>
+    <button className={`${styles[type]} ${styles[size]}`}>{children}</button>
 );
