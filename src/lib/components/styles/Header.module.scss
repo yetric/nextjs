@@ -4,5 +4,5 @@
   line-height: 60px;
 }
 .inner {
-  composes: content from "./Layout.module.scss";
+  composes: content from "Layout.module.scss";
 }

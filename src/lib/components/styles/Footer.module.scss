@@ -5,5 +5,5 @@
 .inner {
   padding: 20px 0;
   font-size: 14px;
-  composes: content from "./Layout.module.scss";
+  composes: content from "Layout.module.scss";
 }

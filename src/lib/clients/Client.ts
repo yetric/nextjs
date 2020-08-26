@@ -1,7 +1,12 @@
 export class Client {
     constructor() {}
 
-    private static async fetch(method: string, url: string, params: any[] = [], headers: any[] = []) {
+    private static async fetch(
+        method: string,
+        url: string,
+        params: any[] = [],
+        headers: any[] = []
+    ) {
         console.log("Do fetch or something here based on " + method);
         return {};
     }
