@@ -3,6 +3,7 @@ import Link from "next/link";
 import { useStores } from "../shared/hooks/use-stores";
 import React from "react";
 import { observer } from "mobx-react-lite";
+import { withTitle } from "../shared/hoc/withTitle";
 
 const Home = observer(() => {
     const { appStore } = useStores();
@@ -103,4 +104,4 @@ const Home = observer(() => {
     );
 });
 
-export default Home;
+export default withTitle(Home, "Yetric Next.js Homepage");
