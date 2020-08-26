@@ -1,8 +1,13 @@
 import "../styles/globals.css";
-import React from "react"; // Always do explicit imports
+import React from "react";
+import { Layout } from "@components/Layout"; // Always do explicit imports
 
-function MyApp({ Component, pageProps }) {
-    return <Component {...pageProps} />;
+function YetricNext({ Component, pageProps }) {
+    return (
+        <Layout>
+            <Component {...pageProps} />
+        </Layout>
+    );
 }
 
-export default MyApp;
+export default YetricNext;

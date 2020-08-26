@@ -17,7 +17,7 @@
       "options": ["ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"]
     },
     "quotemark": [true, "double"],
-    "react-hooks-nesting": true,
+    "react-hooks-nesting": false,
     "indent": {
       "options": ["spaces", 4]
     },

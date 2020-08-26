@@ -1,0 +1,16 @@
+.basic {
+    background-color: rgba(30, 167, 253, 0.07);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main {
+    flex-grow: 1;
+}
+
+.content {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1280px;
+}
