@@ -5,6 +5,7 @@ import React from "react";
 import { observer } from "mobx-react-lite";
 import { withTitle } from "../shared/hoc/withTitle";
 import { withLayout } from "../shared/hoc/withLayout";
+import { asPage } from "../shared/hoc/asPage";
 
 const Home = observer(() => {
     const { appStore } = useStores();
@@ -105,4 +106,6 @@ const Home = observer(() => {
     );
 });
 
-export default withLayout(withTitle(Home, "Yetric Next.js Homepage"));
+export default asPage(Home, {
+    title: "Yetric Next.js Homepage"
+});
