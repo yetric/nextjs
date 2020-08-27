@@ -8,7 +8,7 @@ export const withTitle = (Component: React.ComponentType, title: string) => {
                 <Head>
                     <title>{title}</title>
                 </Head>
-                <Component />
+                <Component {...props} />
             </>
         );
     };
