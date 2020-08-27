@@ -1,0 +1,15 @@
+.base {
+  border: 1px solid var(--light-gray);
+  padding: 20px;
+  border-radius: 8px;
+  background: var(--white);
+  box-shadow: 0 0 8px rgba(#000, .1);
+  p, h1, h2, h3, h4, h5 {
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+}

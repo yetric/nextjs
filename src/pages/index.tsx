@@ -3,9 +3,8 @@ import Link from "next/link";
 import { useStores } from "../shared/hooks/use-stores";
 import React from "react";
 import { observer } from "mobx-react-lite";
-import { withTitle } from "../shared/hoc/withTitle";
-import { withLayout } from "../shared/hoc/withLayout";
 import { asPage } from "../shared/hoc/asPage";
+import { Container } from "@components/Container";
 
 const Home = observer(() => {
     const { appStore } = useStores();
@@ -13,16 +12,26 @@ const Home = observer(() => {
         <div>
             <p>Next JS opinonated setup</p>
 
-            <p className="lead">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, illum, magni.
-                Accusamus alias doloremque enim et eveniet facilis hic minima mollitia neque officia
-                quis rerum sunt, ut vel, vitae voluptate.
-            </p>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad at ea est
-                ex facere in incidunt inventore ipsa molestias, natus officiis optio porro quaerat
-                quod, reiciendis reprehenderit sint voluptatum.
-            </p>
+            <Container>
+                <h2>A Container with Text</h2>
+                <p className="lead">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis, illum,
+                    magni. Accusamus alias doloremque enim et eveniet facilis hic minima mollitia
+                    neque officia quis rerum sunt, ut vel, vitae voluptate.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad at ea
+                    est ex facere in incidunt inventore ipsa molestias, natus officiis optio porro
+                    quaerat quod, reiciendis reprehenderit sint voluptatum.
+                </p>
+                <p>
+                    <Link href={"/login"}>
+                        <a>Login</a>
+                    </Link>
+                </p>
+
+                <Button type={"success"}>Success</Button>
+            </Container>
 
             <p>
                 <Button>Default</Button>

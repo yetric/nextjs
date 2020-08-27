@@ -6,3 +6,8 @@
 .inner {
   composes: content from "Layout.module.scss";
 }
+
+.brand {
+  color: #66bf3c;
+  text-decoration: none;
+}
