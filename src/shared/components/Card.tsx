@@ -4,5 +4,5 @@ import styles from "./styles/Card.module.scss";
 interface CardProps {}
 
 export const Card = ({}: CardProps) => {
-    return <div>Card</div>;
+    return <div className={styles.outer}>Card</div>;
 };
