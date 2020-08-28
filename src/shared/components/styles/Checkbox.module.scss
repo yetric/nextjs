@@ -1,0 +1,12 @@
+.base {
+  composes: outer from "./FormItem.module.scss";
+}
+
+.label {
+  color: red;
+  span {
+    color: black;
+  }
+  input {
+  }
+}

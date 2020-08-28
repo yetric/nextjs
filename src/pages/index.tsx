@@ -20,9 +20,9 @@ const Home = observer(() => {
                     neque officia quis rerum sunt, ut vel, vitae voluptate.
                 </p>
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad at ea
-                    est ex facere in incidunt inventore ipsa molestias, natus officiis optio porro
-                    quaerat quod, reiciendis reprehenderit sint voluptatum.
+                    string Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium ad
+                    at ea est ex facere in incidunt inventore ipsa molestias, natus officiis optio
+                    porro quaerat quod, reiciendis reprehenderit sint voluptatum.
                 </p>
                 <p>
                     <Link href={"/login"}>

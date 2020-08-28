@@ -3,23 +3,30 @@ import { asPage } from "../shared/hoc/asPage";
 import React from "react";
 import { Form } from "@components/Form";
 import { FormItem } from "@components/FormItem";
+import { Button } from "@components/Button";
+import { Checkbox } from "@components/Checkbox";
 
 const Login = observer(() => {
     return (
         <div>
             <Form>
-                <FormItem
-                    placeholder={"Your e-mail address"}
-                    label={"E-mail"}
-                    type={"email"}
-                    value={""}
-                />
+                <FormItem placeholder={"Your e-mail address"} label={"E-mail"} type={"email"} />
                 <FormItem
                     placeholder={"A secure password"}
                     label={"Password"}
                     type={"password"}
-                    value={""}
+                    help={"At least 8 characters long "}
                 />
+
+                <Checkbox
+                    onChange={(checked) => {
+                        console.log(checked ? "checked" : "not checked");
+                    }}
+                    label={"I totally agree to everything"}
+                    value={1}
+                />
+
+                <Button size={"large"}>Login</Button>
             </Form>
         </div>
     );

@@ -1,3 +1,7 @@
-import React from "react";
+import React, { ReactNode } from "react";
 
-export const Form = ({ children }) => <form>{children}</form>;
+interface FormProps {
+    children: ReactNode;
+}
+
+export const Form = ({ children }: FormProps) => <form>{children}</form>;
