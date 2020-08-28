@@ -5,6 +5,7 @@ import { Form } from "@components/Form";
 import { FormItem } from "@components/FormItem";
 import { Button } from "@components/Button";
 import { Checkbox } from "@components/Checkbox";
+import { Card } from "@components/Card";
 
 const Login = observer(() => {
     return (
@@ -27,6 +28,7 @@ const Login = observer(() => {
                 />
 
                 <Button size={"large"}>Login</Button>
+                <Card></Card>
             </Form>
         </div>
     );
