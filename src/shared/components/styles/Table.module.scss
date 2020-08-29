@@ -1,0 +1,40 @@
+/* Auto */
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid var(--light-gray);
+  thead {
+    th {
+      text-align: left;
+      font-weight: 500;
+      border-bottom: 1px solid var(--light-gray);
+      padding: 20px 8px 2px 8px;
+    }
+  }
+  tbody {
+    td {
+      border-bottom: 1px solid var(--light-gray);
+      padding: 4px 8px;
+      font-size: 14px;
+    }
+    tr:nth-child(odd) {
+      background: var(--lighter-gray);
+    }
+  }
+
+  &.tight {
+    thead {
+      th {
+        padding: 2px 4px;
+        font-size: 14px;
+      }
+    }
+    tbody {
+      td {
+        padding: 2px 4px;
+        font-size: 12px;
+      }
+    }
+  }
+}
