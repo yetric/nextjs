@@ -35,6 +35,15 @@ const Home = observer(() => {
                     <li>Aenean massa cum sociis natoque penatibus.</li>
                 </ul>
 
+                <Card>
+                    <h4>Card header</h4>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores fuga
+                        iste magni minima necessitatibus nobis tenetur vel. Aliquid animi eos ex
+                        iusto magni maiores nemo quasi quisquam, quod sapiente?
+                    </p>
+                </Card>
+
                 <Spinner />
 
                 <div>
