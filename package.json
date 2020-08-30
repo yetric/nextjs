@@ -29,6 +29,7 @@
   "devDependencies": {
     "@babel/core": "^7.11.1",
     "@babel/plugin-proposal-decorators": "^7.10.5",
+    "@jest/globals": "^26.4.2",
     "@storybook/addon-actions": "^6.0.7",
     "@storybook/addon-essentials": "^6.0.7",
     "@storybook/addon-links": "^6.0.7",
@@ -39,7 +40,7 @@
     "babel-loader": "^8.1.0",
     "babel-plugin-module-resolver": "^4.0.0",
     "husky": "^4.2.5",
-    "jest": "^26.4.0",
+    "jest": "^26.4.2",
     "lint-staged": "^10.2.11",
     "prettier": "^2.0.5",
     "react-is": "^16.13.1",
