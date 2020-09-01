@@ -6,6 +6,13 @@ import { observer } from "mobx-react-lite";
 import { asPage } from "../shared/hoc/asPage";
 import { Container } from "@components/Container";
 import { Table } from "@components/Table";
+import { Spinner } from "@components/Spinner";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
+
+library.add(fab, faCheckSquare, faCoffee);
 
 const Home = observer(() => {
     const { appStore } = useStores();
@@ -32,6 +39,15 @@ const Home = observer(() => {
                     <li>Aenean massa cum sociis natoque penatibus.</li>
                 </ul>
 
+                <Spinner />
+
+                <div>
+                    <FontAwesomeIcon icon="check-square" />
+                    Popular gadgets come from vendors like:
+                    <FontAwesomeIcon icon={["fab", "apple"]} />
+                    <FontAwesomeIcon icon={["fab", "microsoft"]} />
+                    <FontAwesomeIcon icon={["fab", "google"]} />
+                </div>
                 <blockquote>
                     Gregor then turned to look out the window at the dull weather. Drops of rain
                     could be heard hitting the pane, which made him feel quite sad. "How about if I

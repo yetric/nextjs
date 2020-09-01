@@ -24,10 +24,10 @@ export const Table = ({ tight = false, headers = [], data }: TableProps) => {
                 </thead>
             )}
             <tbody>
-                {data.map((row) => (
-                    <tr>
-                        {row.map((col) => (
-                            <td>{col}</td>
+                {data.map((row, rowIndex) => (
+                    <tr key={`row-${rowIndex}`}>
+                        {row.map((col, colIndex) => (
+                            <td key={`col-${colIndex}-row-${rowIndex}`}>{col}</td>
                         ))}
                     </tr>
                 ))}
