@@ -8,11 +8,7 @@ import { Container } from "@components/Container";
 import { Table } from "@components/Table";
 import { Spinner } from "@components/Spinner";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { library } from "@fortawesome/fontawesome-svg-core";
-import { fab } from "@fortawesome/free-brands-svg-icons";
-import { faCheckSquare, faCoffee } from "@fortawesome/free-solid-svg-icons";
-
-library.add(fab, faCheckSquare, faCoffee);
+import "../core/icons";
 
 const Home = observer(() => {
     const { appStore } = useStores();
