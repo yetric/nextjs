@@ -17,8 +17,8 @@ export const Table = ({ tight = false, headers = [], data }: TableProps) => {
             {headers.length > 0 && (
                 <thead>
                     <tr>
-                        {headers.map((header) => (
-                            <th>{header}</th>
+                        {headers.map((header, index) => (
+                            <th key={`row-header-${index}`}>{header}</th>
                         ))}
                     </tr>
                 </thead>
