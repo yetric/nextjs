@@ -28,7 +28,7 @@ const Login = observer(() => {
                 />
 
                 <Button size={"large"}>Login</Button>
-                <Card></Card>
+                <Card>Holy Smoke</Card>
             </Form>
         </div>
     );
