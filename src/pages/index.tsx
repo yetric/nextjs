@@ -7,9 +7,9 @@ import { asPage } from "../shared/hoc/asPage";
 import { Container } from "@components/Container";
 import { Table } from "@components/Table";
 import { Spinner } from "@components/Spinner";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../core/icons";
 import { Card } from "@components/Card";
+import { Icon } from "@components/Icon";
 
 const Home = observer(() => {
     const { appStore } = useStores();
@@ -48,11 +48,8 @@ const Home = observer(() => {
                 <Spinner />
 
                 <div>
-                    <FontAwesomeIcon icon="check-square" />
-                    Popular gadgets come from vendors like:
-                    <FontAwesomeIcon icon={["fab", "apple"]} />
-                    <FontAwesomeIcon icon={["fab", "microsoft"]} />
-                    <FontAwesomeIcon icon={["fab", "google"]} />
+                    <Icon name={"check-square"} size={"lg"} />
+                    <Icon name={"apple"} type={"fab"} size={"8x"} />
                 </div>
                 <blockquote>
                     Gregor then turned to look out the window at the dull weather. Drops of rain
