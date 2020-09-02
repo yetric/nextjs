@@ -9,6 +9,7 @@ import { Table } from "@components/Table";
 import { Spinner } from "@components/Spinner";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../core/icons";
+import { Card } from "@components/Card";
 
 const Home = observer(() => {
     const { appStore } = useStores();
@@ -38,9 +39,9 @@ const Home = observer(() => {
                 <Card>
                     <h4>Card header</h4>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta dolores fuga
-                        iste magni minima necessitatibus nobis tenetur vel. Aliquid animi eos ex
-                        iusto magni maiores nemo quasi quisquam, quod sapiente?
+                        Lorem ipsums dsdsdolor sit amet, consectetur adipisicing elit. Dicta dolores
+                        fuga iste magni minima necessitatibus nobis tenetur vel. Aliquid animi eos
+                        ex iusto magni maiores nemo quasi quisquam, quod sapiente?
                     </p>
                 </Card>
 

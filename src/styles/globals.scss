@@ -60,3 +60,16 @@ h5,
 h6 {
     font-weight: 500;
 }
+
+blockquote {
+    margin: 30px;
+    padding: 20px 30px;
+    border-left: 2px solid var(--light-gray);
+    background: var(--lighter-gray);
+    font-style: italic;
+}
+
+ul {
+    padding: 0 0 0 18px;
+    margin: 20px 0;
+}
