@@ -10,10 +10,6 @@ interface IconProps {
     size?: SizeProp;
 }
 
-export const Icon = ({ name, type = null, size = "1x" }: IconProps) => {
-    return type ? (
-        <FontAwesomeIcon className={styles.base} size={size} icon={[type, name]} />
-    ) : (
-        <FontAwesomeIcon className={styles.base} size={size} icon={name} />
-    );
+export const Icon = ({ name, type = "far", size = "1x" }: IconProps) => {
+    return <FontAwesomeIcon className={styles.base} size={size} icon={[type, name]} />;
 };

@@ -81,7 +81,7 @@ const Home = observer(() => {
 
             <p>
                 <Button>Default</Button>
-                <Button type={"alert"} icon={"check-square"}>
+                <Button type={"alert"} icon={"check-circle"}>
                     Alert
                 </Button>
                 <Button type={"success"}>Success</Button>
@@ -90,7 +90,7 @@ const Home = observer(() => {
             </p>
 
             <p>
-                <Button size={"small"} icon={"check-square"}>
+                <Button size={"small"} icon={"bell"}>
                     Default
                 </Button>
                 <Button size={"small"} type={"alert"}>
@@ -115,7 +115,7 @@ const Home = observer(() => {
                 <Button size={"large"} type={"success"}>
                     Success
                 </Button>
-                <Button size={"large"} type={"info"} icon={"address-book"}>
+                <Button size={"large"} type={"info"} icon={"calendar-plus"}>
                     Info
                 </Button>
                 <Button size={"large"} type={"warning"}>
@@ -128,7 +128,7 @@ const Home = observer(() => {
                 <Button size={"tiny"} type={"alert"}>
                     Alert
                 </Button>
-                <Button size={"tiny"} icon={"check-square"} type={"success"}>
+                <Button size={"tiny"} icon={"calendar-plus"} type={"success"}>
                     Success
                 </Button>
                 <Button size={"tiny"} type={"info"}>
