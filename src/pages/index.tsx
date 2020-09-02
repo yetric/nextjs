@@ -62,7 +62,7 @@ const Home = observer(() => {
                 </blockquote>
 
                 <Table
-                    tight={true}
+                    tight={false}
                     headers={["A", "B Header", "Another", "Zissly"]}
                     data={[
                         ["A", "B", "C", "D"],
@@ -81,14 +81,18 @@ const Home = observer(() => {
 
             <p>
                 <Button>Default</Button>
-                <Button type={"alert"}>Alert</Button>
+                <Button type={"alert"} icon={"check-square"}>
+                    Alert
+                </Button>
                 <Button type={"success"}>Success</Button>
                 <Button type={"info"}>Info</Button>
                 <Button type={"warning"}>Warning</Button>
             </p>
 
             <p>
-                <Button size={"small"}>Default</Button>
+                <Button size={"small"} icon={"check-square"}>
+                    Default
+                </Button>
                 <Button size={"small"} type={"alert"}>
                     Alert
                 </Button>
@@ -111,7 +115,7 @@ const Home = observer(() => {
                 <Button size={"large"} type={"success"}>
                     Success
                 </Button>
-                <Button size={"large"} type={"info"}>
+                <Button size={"large"} type={"info"} icon={"address-book"}>
                     Info
                 </Button>
                 <Button size={"large"} type={"warning"}>
@@ -124,7 +128,7 @@ const Home = observer(() => {
                 <Button size={"tiny"} type={"alert"}>
                     Alert
                 </Button>
-                <Button size={"tiny"} type={"success"}>
+                <Button size={"tiny"} icon={"check-square"} type={"success"}>
                     Success
                 </Button>
                 <Button size={"tiny"} type={"info"}>
